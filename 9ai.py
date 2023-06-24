@@ -1,4 +1,5 @@
 import spacy
+spacy.cli.download("en_core_web_sm")
 sp = spacy.load('en_core_web_sm')
 sen = sp(u"I like to play football. I hated it in my childhood though")
 print(sen.text)
@@ -17,7 +18,7 @@ print(f'{word.text:{12}} {word.pos_:{10}} {word.tag_:{8}} {spacy.explain(word.ta
 #Finding the Number of POS Tags
 sen = sp(u"I like to play football. I hated it in my childhood though")
 num_pos = sen.count_by(spacy.attrs.POS)
-num_pos
+print(num_pos)
 for k,v in sorted(num_pos.items()):
     print(f'{k}. {sen.vocab[k].text:{8}}: {v}')
 #Visualizing Parts of Speech Tags
