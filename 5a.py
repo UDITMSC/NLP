@@ -6,7 +6,7 @@ from nltk import chunk
 nltk.download('averaged_perceptron_tagger')
 nltk.download('maxent_ne_chunker')
 nltk.download('words')
-para = "Hello! My name is Beena Kapadia. Today you'll be learning NLTK."
+para = "Hello! My name is UDIT. Today you'll be learning NLTK."
 sents = tokenize.sent_tokenize(para)
 print("\nsentence tokenization\n===================\n",sents)
 # word tokenization
