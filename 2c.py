@@ -2,8 +2,10 @@
 text = ['The', 'Fulton', 'County', 'Grand', 'Jury', 'said', ...]
 pairs = [('news', 'The'), ('news', 'Fulton'), ('news', 'County'), ...]
 import nltk
-from nltk.corpus import brown
 nltk.download('brown')
+nltk.download('inaugural')
+nltk.download('udhr')
+from nltk.corpus import brown
 fd = nltk.ConditionalFreqDist(
  (genre, word)
  for genre in brown.categories()
