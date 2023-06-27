@@ -3,6 +3,7 @@ archive, which contains some 25,000 free electronic books, hosted at
 http://www.filelist.org/. We begin by getting the Python interpreter to load the NLTK
 package, then ask to see nltk.corpus.filelist.fileids(), the file identifiers in this corpus:'''
 import nltk
+nltk.download('punkt')
 from nltk.corpus import PlaintextCorpusReader
 corpus_root = 'test'
 filelist = PlaintextCorpusReader(corpus_root, '.*')
