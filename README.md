@@ -20,4 +20,4 @@ curl https://raw.githubusercontent.com/UDITMSC/NLP/main/1b.py -o new.py
 
 Note: The above example is provided for demonstration purposes and may not be applicable to your use case.
 
-### Note: Please refer to journal.pdf for indexes.
+### Note: Please refer to NLPJournal.pdf for indexes.
