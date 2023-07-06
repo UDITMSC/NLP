@@ -1,5 +1,6 @@
 import spacy
 # Load English tokenizer, tagger, parser and NER
+spacy.cli.download("en_core_web_sm")
 nlp = spacy.load("en_core_web_sm")
 # Process whole documents
 text = ("When Sebastian Thrun started working on self-driving cars at "
